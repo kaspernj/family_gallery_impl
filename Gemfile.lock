@@ -48,6 +48,9 @@ GEM
     capistrano-rails (1.1.2)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    capistrano-rvm (0.1.1)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
     capistrano-stats (1.1.1)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -235,6 +238,7 @@ DEPENDENCIES
   capistrano
   capistrano-bundler
   capistrano-rails
+  capistrano-rvm
   coffee-rails (~> 4.0.0)
   colorize (= 0.6.0)
   family_gallery (= 0.0.1)

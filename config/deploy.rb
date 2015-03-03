@@ -20,7 +20,7 @@ set :deploy_to, '/var/www/family_gallery_impl'
 # set :log_level, :debug
 
 # Default value for :pty is false
-# set :pty, true
+set :pty, true
 
 # Default value for :linked_files is []
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/family_gallery.yml')
@@ -34,12 +34,26 @@ set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'tmp/ca
 # Default value for keep_releases is 5
 set :keep_releases, 5
 
+# RVM
+set :rvm_ruby_version, '2.2.0'
+
 namespace :deploy do
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3 do
       # Here we can do anything such as:
+      # within release_path do
+      #   execute :rake, 'cache:clear'
+      # end
+    end
+  end
+
+  after :publishing, :restart
+
+  task :restart do
+    on roles(:web), in: :sequence do
+      execute :sudo, "apache2ctl graceful"
+
       within release_path do
-        execute :sudo, "apache2ctl graceful"
         execute :rake, 'cache:clear'
 
         with rails_env: fetch(:rails_env) do

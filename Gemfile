@@ -14,6 +14,7 @@ group :development do
   gem 'capistrano'
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
   gem 'colorize', '0.6.0'
   gem 'pry'
 end
