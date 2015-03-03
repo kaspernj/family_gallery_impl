@@ -2,8 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.10'
-gem "family_gallery", path: "/home/kaspernj/Dev/Rails/family_gallery"
-gem "awesome_translations", path: "/home/kaspernj/Dev/Rails/awesome_translations"
+gem "family_gallery", "0.0.1"
 
 gem 'mysql2'
 gem 'sass-rails', '~> 4.0.2'
