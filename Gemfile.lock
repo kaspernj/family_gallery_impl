@@ -75,7 +75,7 @@ GEM
     erubis (2.7.0)
     execjs (2.3.0)
     exifr (1.2.0)
-    family_gallery (0.0.2)
+    family_gallery (0.0.3)
       awesome_translations
       cancancan
       coffee-rails
@@ -241,7 +241,7 @@ DEPENDENCIES
   capistrano-rvm
   coffee-rails (~> 4.0.0)
   colorize (= 0.6.0)
-  family_gallery (= 0.0.2)
+  family_gallery (= 0.0.3)
   jquery-rails
   mysql2
   pry
