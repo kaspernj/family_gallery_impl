@@ -51,13 +51,11 @@ namespace :deploy do
 
   task :restart do
     on roles(:web), in: :sequence do
-      execute :sudo, "apache2ctl graceful"
+      execute :sudo, 'apache2ctl graceful'
 
       within release_path do
-        execute :rake, 'cache:clear'
-
         with rails_env: fetch(:rails_env) do
-          execute :rake, "plugin_migrator:migrate"
+          execute :rake, 'plugin_migrator:migrate'
         end
       end
     end
