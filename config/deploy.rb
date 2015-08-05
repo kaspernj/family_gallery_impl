@@ -2,7 +2,7 @@
 lock '3.3.5'
 
 set :application, 'family_gallery_impl'
-set :repo_url, 'git@github.com:kaspernj/family_gallery_impl.git'
+set :repo_url, 'https://github.com/kaspernj/family_gallery_impl.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
