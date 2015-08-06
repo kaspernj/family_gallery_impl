@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git://github.com/kaspernj/light_mobile.git
-  revision: 6947e9f33e5aa921339a28f46711e11c5ff2cd26
+  revision: f10d8eb3fe772e2ca9ee2b3b1a309db3bd19290c
   specs:
     light_mobile (0.0.11)
       agent_helpers (>= 0.0.5)
