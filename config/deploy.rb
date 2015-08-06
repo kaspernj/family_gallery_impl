@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.3.5'
+lock '3.4.0'
 
 set :application, 'family_gallery_impl'
 set :repo_url, 'https://github.com/kaspernj/family_gallery_impl.git'
