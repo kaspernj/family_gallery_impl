@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/kaspernj/family_gallery.git
-  revision: dae26f73481cf07c825ceb5e148b301b0218195f
+  revision: d44aa19540d7253d7d7e9e521439245db8aa0eae
   specs:
     family_gallery (0.0.7)
       awesome_translations (~> 0.0.23)
@@ -23,6 +23,15 @@ GIT
       simple_form
       simple_form_ransack (>= 0.0.6)
       will_paginate
+
+GIT
+  remote: git://github.com/kaspernj/light_mobile.git
+  revision: 6947e9f33e5aa921339a28f46711e11c5ff2cd26
+  specs:
+    light_mobile (0.0.11)
+      agent_helpers (>= 0.0.5)
+      html_gen (>= 0.0.6)
+      rails (>= 4.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -142,10 +151,6 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     jwt (1.5.1)
-    light_mobile (0.0.11)
-      agent_helpers (>= 0.0.5)
-      html_gen (>= 0.0.6)
-      rails (>= 4.0.0)
     loofah (2.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -305,6 +310,7 @@ DEPENDENCIES
   colorize (= 0.6.0)
   family_gallery!
   jquery-rails
+  light_mobile!
   mysql2
   pry
   rails (= 4.2.3)
