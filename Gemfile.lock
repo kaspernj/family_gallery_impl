@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/kaspernj/family_gallery.git
-  revision: 4fde41e901d8527c94632db400cb29e02403abc3
+  revision: 8a623c04c8db3ddf1096870b0bca1951abd3037f
   specs:
     family_gallery (0.0.7)
       awesome_translations (~> 0.0.23)
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git://github.com/kaspernj/light_mobile.git
-  revision: f10d8eb3fe772e2ca9ee2b3b1a309db3bd19290c
+  revision: 0649dee386072f352758cdf9cbc687d0fd3e24cf
   specs:
     light_mobile (0.0.11)
       agent_helpers (>= 0.0.5)
