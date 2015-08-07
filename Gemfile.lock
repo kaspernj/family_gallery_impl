@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/kaspernj/family_gallery.git
-  revision: 990b37a000fb26757fb63d2e17c5fca4c6ef950f
+  revision: 3c06ca4846d198788f004ea4a256c4b7f735fd96
   specs:
     family_gallery (0.0.8)
       awesome_translations (~> 0.0.23)
