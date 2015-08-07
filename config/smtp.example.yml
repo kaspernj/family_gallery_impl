@@ -1,0 +1,8 @@
+address: 'mailserver.com'
+port: 587
+domain: 'mydomain.com'
+user_name: 'username'
+password: 'password'
+authentication: 'plain'
+enable_starttls_auto: false
+default_from: familygallery@mydomain.com

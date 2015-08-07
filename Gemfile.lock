@@ -1,12 +1,13 @@
 GIT
   remote: git://github.com/kaspernj/family_gallery.git
-  revision: 5e8cfb176ce5e6936d482149d7a5c782972ce401
+  revision: 990b37a000fb26757fb63d2e17c5fca4c6ef950f
   specs:
     family_gallery (0.0.8)
       awesome_translations (~> 0.0.23)
       cancancan
       coffee-rails
       devise
+      exception_notification (>= 4.1.1)
       exifr (= 1.2.0)
       globalize
       haml-rails
@@ -28,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/kaspernj/light_mobile.git
-  revision: f89f80e49231b48c0748242ee308f5887d263247
+  revision: 18cdd0f64922f61d4b905fddeb4439fef161ff93
   specs:
     light_mobile (0.0.11)
       agent_helpers (>= 0.0.5)
@@ -121,6 +122,9 @@ GEM
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
     erubis (2.7.0)
+    exception_notification (4.1.1)
+      actionmailer (>= 3.0.4)
+      activesupport (>= 3.0.4)
     execjs (2.5.2)
     exifr (1.2.0)
     faraday (0.9.1)

@@ -18,6 +18,7 @@
 # Config files.
 /config/family_gallery.yml
 /config/database.yml
+/config/smtp.yml
 
 # Uploaded files.
 /public/system

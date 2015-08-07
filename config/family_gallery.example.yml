@@ -1,0 +1,6 @@
+facebook:
+  app_id: 123
+  app_secret: 321
+robot_email: familygallery@example.com
+notification_emails:
+  - adminemail@example.com

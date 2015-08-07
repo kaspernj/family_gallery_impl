@@ -2,8 +2,12 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
+
 gem 'family_gallery', github: 'kaspernj/family_gallery'
 gem 'light_mobile', github: 'kaspernj/light_mobile'
+
+#gem 'family_gallery', path: '/home/kaspernj/Dev/Rails/family_gallery'
+#gem 'light_mobile', path: '/home/kaspernj/Dev/Rails/light_mobile'
 
 gem 'mysql2', '~> 0.3.19'
 gem 'sass-rails', '~> 4.0.5'

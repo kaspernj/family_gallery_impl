@@ -66,6 +66,14 @@ FamilyGalleryImpl::Application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
 
+  smtp_config = YAML.load(File.read(Rails.root.join('config', 'smtp.yml'))).symbolize_keys!
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = smtp_config
+  config.action_mailer.default_options = {
+    from: smtp_config[:default_from]
+  }
+
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).
   config.i18n.fallbacks = true
