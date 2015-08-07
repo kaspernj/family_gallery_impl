@@ -1,32 +1,4 @@
 GIT
-  remote: git://github.com/kaspernj/family_gallery.git
-  revision: f3046eb0c8f07029386c8e90901dce4ade6dcff4
-  specs:
-    family_gallery (0.0.7)
-      awesome_translations (~> 0.0.23)
-      cancancan
-      coffee-rails
-      devise
-      exifr (= 1.2.0)
-      globalize
-      haml-rails
-      jquery-rails
-      light_mobile (>= 0.0.11)
-      omniauth
-      omniauth-facebook
-      paperclip (= 4.3.0)
-      plugin_migrator (~> 0.0.3)
-      rails (>= 4.2.0, < 5.0.0)
-      rails-i18n (~> 4.0.4)
-      rails_imager (>= 0.0.28)
-      ransack
-      rmagick (>= 2.15.3)
-      sass-rails
-      simple_form
-      simple_form_ransack (>= 0.0.6)
-      will_paginate
-
-GIT
   remote: git://github.com/kaspernj/light_mobile.git
   revision: 0649dee386072f352758cdf9cbc687d0fd3e24cf
   specs:
@@ -123,6 +95,29 @@ GEM
     erubis (2.7.0)
     execjs (2.5.2)
     exifr (1.2.0)
+    family_gallery (0.0.8)
+      awesome_translations (~> 0.0.23)
+      cancancan
+      coffee-rails
+      devise
+      exifr (= 1.2.0)
+      globalize
+      haml-rails
+      jquery-rails
+      light_mobile (>= 0.0.11)
+      omniauth
+      omniauth-facebook
+      paperclip (= 4.3.0)
+      plugin_migrator (~> 0.0.3)
+      rails (>= 4.2.0, < 5.0.0)
+      rails-i18n (~> 4.0.4)
+      rails_imager (>= 0.0.28)
+      ransack
+      rmagick (>= 2.15.3)
+      sass-rails
+      simple_form
+      simple_form_ransack (>= 0.0.6)
+      will_paginate
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     globalid (0.3.6)
@@ -337,7 +332,7 @@ DEPENDENCIES
   capistrano-rvm
   coffee-rails (~> 4.0.0)
   colorize (= 0.6.0)
-  family_gallery!
+  family_gallery (= 0.0.8)
   jquery-rails
   light_mobile!
   mysql2

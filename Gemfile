@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
-gem 'family_gallery', github: 'kaspernj/family_gallery'
+gem 'family_gallery', '0.0.8' #github: 'kaspernj/family_gallery'
 gem 'light_mobile', github: 'kaspernj/light_mobile'
 
 gem 'mysql2'
