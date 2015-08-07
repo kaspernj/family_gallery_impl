@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/kaspernj/family_gallery.git
-  revision: d44aa19540d7253d7d7e9e521439245db8aa0eae
+  revision: f3046eb0c8f07029386c8e90901dce4ade6dcff4
   specs:
     family_gallery (0.0.7)
       awesome_translations (~> 0.0.23)
@@ -18,7 +18,9 @@ GIT
       plugin_migrator (~> 0.0.3)
       rails (>= 4.2.0, < 5.0.0)
       rails-i18n (~> 4.0.4)
+      rails_imager (>= 0.0.28)
       ransack
+      rmagick (>= 2.15.3)
       sass-rails
       simple_form
       simple_form_ransack (>= 0.0.6)
@@ -26,7 +28,7 @@ GIT
 
 GIT
   remote: git://github.com/kaspernj/light_mobile.git
-  revision: f10d8eb3fe772e2ca9ee2b3b1a309db3bd19290c
+  revision: 0649dee386072f352758cdf9cbc687d0fd3e24cf
   specs:
     light_mobile (0.0.11)
       agent_helpers (>= 0.0.5)
@@ -109,6 +111,7 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     colorize (0.6.0)
+    datet (0.0.25)
     devise (3.5.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -144,6 +147,8 @@ GEM
       ruby_parser (~> 3.5)
     html_gen (0.0.6)
       string-cases
+    http2 (0.0.31)
+      string-cases (~> 0)
     i18n (0.7.0)
     jquery-rails (4.0.4)
       rails-dom-testing (~> 1.0)
@@ -151,6 +156,13 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.3)
     jwt (1.5.1)
+    knjrbfw (0.0.113)
+      datet
+      http2
+      php4r
+      ruby_process
+      tsafe
+      wref (>= 0.0.8)
     loofah (2.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -159,7 +171,7 @@ GEM
     mime-types (2.6.1)
     mimemagic (0.3.0)
     mini_portile (0.6.2)
-    minitest (5.7.0)
+    minitest (5.8.0)
     multi_json (1.11.2)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -190,6 +202,10 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (= 0.3.0)
+    php4r (0.0.4)
+      datet
+      http2
+      string-strtr
     plugin_migrator (0.0.3)
       rails (>= 4.0.0)
       string-cases
@@ -224,6 +240,11 @@ GEM
     rails-i18n (4.0.4)
       i18n (~> 0.6)
       railties (~> 4.0)
+    rails_imager (0.0.28)
+      datet (~> 0.0.25)
+      knjrbfw (~> 0.0.112)
+      rails (>= 4.0.0)
+      string-cases (~> 0.0.1)
     railties (4.2.3)
       actionpack (= 4.2.3)
       activesupport (= 4.2.3)
@@ -240,6 +261,7 @@ GEM
       json (~> 1.4)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
+    rmagick (2.15.3)
     rspec-core (3.3.2)
       rspec-support (~> 3.3.0)
     rspec-expectations (3.3.1)
@@ -257,8 +279,12 @@ GEM
       rspec-mocks (~> 3.3.0)
       rspec-support (~> 3.3.0)
     rspec-support (3.3.0)
-    ruby_parser (3.7.0)
+    ruby_parser (3.7.1)
       sexp_processor (~> 4.1)
+    ruby_process (0.0.13)
+      string-cases
+      tsafe
+      wref
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
@@ -289,14 +315,17 @@ GEM
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     string-cases (0.0.1)
+    string-strtr (0.0.3)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
+    tsafe (0.0.11)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     warden (1.2.3)
       rack (>= 1.0)
     will_paginate (3.0.7)
+    wref (0.0.8)
 
 PLATFORMS
   ruby
