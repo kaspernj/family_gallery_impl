@@ -5,10 +5,10 @@ gem 'rails', '4.2.3'
 gem 'family_gallery', github: 'kaspernj/family_gallery'
 gem 'light_mobile', github: 'kaspernj/light_mobile'
 
-gem 'mysql2'
-gem 'sass-rails', '~> 4.0.2'
-gem 'coffee-rails', '~> 4.0.0'
-gem 'jquery-rails'
+gem 'mysql2', '~> 0.3.19'
+gem 'sass-rails', '~> 4.0.5'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'jquery-rails', '~> 4.0.4'
 
 group :development do
   # Use Capistrano for deployment

@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/kaspernj/family_gallery.git
-  revision: fd663499cbeedb05da3088ea9a7e8680899f3612
+  revision: 3ea8d1a113ba6897654389e7586ca19be12e0cb2
   specs:
     family_gallery (0.0.8)
       awesome_translations (~> 0.0.23)
@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: git://github.com/kaspernj/light_mobile.git
-  revision: 0649dee386072f352758cdf9cbc687d0fd3e24cf
+  revision: f89f80e49231b48c0748242ee308f5887d263247
   specs:
     light_mobile (0.0.11)
       agent_helpers (>= 0.0.5)
@@ -103,7 +103,7 @@ GEM
     cocaine (0.5.7)
       climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.0)
-    coffee-rails (4.0.1)
+    coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
     coffee-script (2.4.1)
@@ -335,16 +335,16 @@ DEPENDENCIES
   capistrano-bundler
   capistrano-rails
   capistrano-rvm
-  coffee-rails (~> 4.0.0)
+  coffee-rails (~> 4.1.0)
   colorize (= 0.6.0)
   family_gallery!
-  jquery-rails
+  jquery-rails (~> 4.0.4)
   light_mobile!
-  mysql2
+  mysql2 (~> 0.3.19)
   pry
   rails (= 4.2.3)
   rspec-rails (= 3.3.1)
-  sass-rails (~> 4.0.2)
+  sass-rails (~> 4.0.5)
   sdoc
 
 BUNDLED WITH
