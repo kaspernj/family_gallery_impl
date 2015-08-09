@@ -19,14 +19,15 @@ module FamilyGalleryImpl
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
-    # config.time_zone = 'Central Time (US & Canada)'
+    family_gallery_config = Psych.load_file(Rails.root.join('config', 'family_gallery.yml'))
+    if family_gallery_config['timezone'].present?
+      config.time_zone = family_gallery_config.fetch('timezone')
+    end
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**", "*.yml").to_s]
     config.i18n.load_path += Dir[FamilyGallery::Engine.root.join("config", "locales", "**", "*.yml").to_s]
     config.i18n.default_locale = :da
     config.i18n.available_locales = [:da, :de, :en]
-
-    config.active_record.raise_in_transactional_callbacks = true
   end
 end

@@ -4,3 +4,4 @@ facebook:
 robot_email: familygallery@example.com
 notification_emails:
   - adminemail@example.com
+timezone: Copenhagen
