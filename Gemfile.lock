@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/kaspernj/family_gallery.git
-  revision: fd5b1678364494e5a6b305072c8e087849f9753b
+  revision: 6c973b5e7fc3d5ff8baeebff6cf72a476644ad53
   specs:
     family_gallery (0.0.8)
       awesome_translations (~> 0.0.24)
@@ -24,7 +24,6 @@ GIT
       rmagick (>= 2.15.3)
       sass-rails
       simple_form
-      simple_form_ransack
       simple_form_ransack (>= 0.0.6)
       will_paginate
 
