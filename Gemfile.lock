@@ -444,6 +444,7 @@ DEPENDENCIES
   spring (= 1.6.4)
   spring-commands-rspec (= 1.0.4)
   spring-commands-rubocop (= 0.1.0)
+  string-cases (= 0.0.4)
 
 BUNDLED WITH
    1.11.2
