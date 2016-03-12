@@ -9,4 +9,5 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-FamilyGalleryImpl::Application.config.secret_key_base = '843bdb99bb9c3fe6aebc5ece23f45744abde2d40049098b978f15eeb5292be8f7a8caf335ea664ed26e563eb77d29a02928c583f03db16c09c44b0fa63fd7118'
+FamilyGalleryImpl::Application.config.secret_key_base =
+  "843bdb99bb9c3fe6aebc5ece23f45744abde2d40049098b978f15eeb5292be8f7a8caf335ea664ed26e563eb77d29a02928c583f03db16c09c44b0fa63fd7118"

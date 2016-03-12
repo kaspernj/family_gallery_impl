@@ -1,14 +1,14 @@
 # config valid only for current version of Capistrano
-lock '3.4.0'
+lock "3.4.0"
 
-set :application, 'family_gallery_impl'
-set :repo_url, 'https://github.com/kaspernj/family_gallery_impl.git'
+set :application, "family_gallery_impl"
+set :repo_url, "https://github.com/kaspernj/family_gallery_impl.git"
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/var/www/family_gallery_impl'
+set :deploy_to, "/var/www/family_gallery_impl"
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -23,10 +23,10 @@ set :deploy_to, '/var/www/family_gallery_impl'
 set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/family_gallery.yml', 'config/smtp.yml')
+set :linked_files, fetch(:linked_files, []).push("config/database.yml", "config/family_gallery.yml", "config/smtp.yml")
 
 # Default value for linked_dirs is []
-set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
+set :linked_dirs, fetch(:linked_dirs, []).push("bin", "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system")
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
@@ -35,7 +35,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'tmp/ca
 set :keep_releases, 5
 
 # RVM
-set :rvm_ruby_version, '2.2.0'
+set :rvm_ruby_version, "2.2.0"
 
 namespace :deploy do
   after :restart, :clear_cache do
@@ -51,11 +51,9 @@ namespace :deploy do
 
   task :restart do
     on roles(:web), in: :sequence do
-      execute :sudo, 'apache2ctl graceful'
-
       within release_path do
         with rails_env: fetch(:rails_env) do
-          execute :rake, 'plugin_migrator:migrate'
+          execute :rake, "plugin_migrator:migrate"
         end
       end
     end

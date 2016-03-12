@@ -17,7 +17,7 @@ FamilyGalleryImpl::Application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_deliveries = true
 
-  smtp_config = YAML.load(File.read(Rails.root.join('config', 'smtp.yml'))).symbolize_keys!
+  smtp_config = YAML.load_file(Rails.root.join("config", "smtp.yml")).symbolize_keys!
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = smtp_config
@@ -35,7 +35,10 @@ FamilyGalleryImpl::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
-  config.assets.precompile += ['light_mobile/basic_layout.js', 'light_mobile/basic_layout.css', 'family_gallery/application_mobile.js', 'family_gallery/application_mobile.css']
+  config.assets.precompile += [
+    "family_gallery/application_mobile.js",
+    "family_gallery/application_mobile.css"
+  ]
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true

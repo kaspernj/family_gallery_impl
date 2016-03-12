@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150508081950) do
+ActiveRecord::Schema.define(version: 20160209153626) do
 
   create_table "family_gallery_group_picture_links", force: :cascade do |t|
     t.integer  "group_id",   limit: 4
@@ -38,10 +38,14 @@ ActiveRecord::Schema.define(version: 20150508081950) do
 
   create_table "family_gallery_groups", force: :cascade do |t|
     t.integer  "user_owner_id", limit: 4
+    t.datetime "date_from"
+    t.datetime "date_to"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "family_gallery_groups", ["date_from"], name: "index_family_gallery_groups_on_date_from", using: :btree
+  add_index "family_gallery_groups", ["date_to"], name: "index_family_gallery_groups_on_date_to", using: :btree
   add_index "family_gallery_groups", ["user_owner_id"], name: "index_family_gallery_groups_on_user_owner_id", using: :btree
 
   create_table "family_gallery_picture_translations", force: :cascade do |t|
@@ -57,19 +61,23 @@ ActiveRecord::Schema.define(version: 20150508081950) do
   add_index "family_gallery_picture_translations", ["locale"], name: "index_family_gallery_picture_translations_on_locale", using: :btree
 
   create_table "family_gallery_pictures", force: :cascade do |t|
-    t.integer  "user_owner_id",      limit: 4
-    t.integer  "user_uploaded_id",   limit: 4
+    t.integer  "user_owner_id",              limit: 4
+    t.integer  "user_uploaded_id",           limit: 4
     t.datetime "taken_at"
-    t.integer  "width",              limit: 4
-    t.integer  "height",             limit: 4
-    t.decimal  "latitude",                       precision: 10, scale: 8
-    t.decimal  "longitude",                      precision: 10, scale: 8
+    t.integer  "width",                      limit: 4
+    t.integer  "height",                     limit: 4
+    t.decimal  "latitude",                               precision: 10, scale: 8
+    t.decimal  "longitude",                              precision: 10, scale: 8
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "image_file_name",    limit: 255
-    t.string   "image_content_type", limit: 255
-    t.integer  "image_file_size",    limit: 4
+    t.string   "image_file_name",            limit: 255
+    t.string   "image_content_type",         limit: 255
+    t.integer  "image_file_size",            limit: 4
     t.datetime "image_updated_at"
+    t.string   "image_to_show_file_name",    limit: 255
+    t.string   "image_to_show_content_type", limit: 255
+    t.integer  "image_to_show_file_size",    limit: 4
+    t.datetime "image_to_show_updated_at"
   end
 
   add_index "family_gallery_pictures", ["latitude"], name: "index_family_gallery_pictures_on_latitude", using: :btree
@@ -131,4 +139,14 @@ ActiveRecord::Schema.define(version: 20150508081950) do
   add_index "family_gallery_users", ["reset_password_token"], name: "index_family_gallery_users_on_reset_password_token", unique: true, using: :btree
   add_index "family_gallery_users", ["unlock_token"], name: "index_family_gallery_users_on_unlock_token", unique: true, using: :btree
 
+  add_foreign_key "family_gallery_group_picture_links", "family_gallery_pictures", column: "picture_id"
+  add_foreign_key "family_gallery_group_translations", "family_gallery_groups"
+  add_foreign_key "family_gallery_groups", "family_gallery_users", column: "user_owner_id"
+  add_foreign_key "family_gallery_picture_translations", "family_gallery_pictures"
+  add_foreign_key "family_gallery_pictures", "family_gallery_users", column: "user_owner_id"
+  add_foreign_key "family_gallery_pictures", "family_gallery_users", column: "user_uploaded_id"
+  add_foreign_key "family_gallery_user_roles", "family_gallery_users", column: "user_id"
+  add_foreign_key "family_gallery_user_taggings", "family_gallery_pictures", column: "picture_id"
+  add_foreign_key "family_gallery_user_taggings", "family_gallery_users", column: "tagged_by_id"
+  add_foreign_key "family_gallery_user_taggings", "family_gallery_users", column: "user_id"
 end
