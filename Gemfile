@@ -3,6 +3,8 @@ source "https://rubygems.org"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "rails", "4.2.6"
 
+gem "awesome_translations", github: "kaspernj/awesome_translations"
+
 gem "family_gallery", github: "kaspernj/family_gallery"
 gem "bootstrap_builders", github: "kaspernj/bootstrap_builders"
 
