@@ -19,6 +19,7 @@
 /config/family_gallery.yml
 /config/database.yml
 /config/smtp.yml
+/config/deploy/production.rb
 
 # Uploaded files.
 /public/system
