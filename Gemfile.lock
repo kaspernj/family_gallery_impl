@@ -41,7 +41,7 @@ GIT
 
 GIT
   remote: git://github.com/kaspernj/family_gallery.git
-  revision: 21282267f73900f5865fca5488d5e97de0a160bf
+  revision: dcba33ee8d9064a9df6453d898cb28885da09100
   specs:
     family_gallery (0.0.8)
       awesome_translations (~> 0.0.25)
@@ -67,7 +67,7 @@ GIT
       sass-rails (= 4.0.5)
       simple_form (~> 3.2.1)
       simple_form_ransack (>= 0.0.6)
-      twitter-bootstrap-rails
+      twitter-bootstrap-rails (= 3.2.2)
       will_paginate
 
 GEM
