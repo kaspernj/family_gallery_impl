@@ -6,6 +6,13 @@ GIT
       auto_autoloader
 
 GIT
+  remote: git://github.com/kaspernj/bootstrap_builders.git
+  revision: 70f4c5a46c2b6c41079b8e793bca52308f83fbff
+  specs:
+    bootstrap_builders (0.0.3)
+      html_gen (>= 0.0.11)
+
+GIT
   remote: git://github.com/kaspernj/family_gallery.git
   revision: 3d30b43e9821f13527c3468021361fb9aed1e43b
   specs:
@@ -35,12 +42,6 @@ GIT
       simple_form_ransack (>= 0.0.6)
       twitter-bootstrap-rails
       will_paginate
-
-PATH
-  remote: /Users/kaspernj/Dev/Ruby/bootstrap_builders
-  specs:
-    bootstrap_builders (0.0.3)
-      html_gen (>= 0.0.11)
 
 GEM
   remote: https://rubygems.org/

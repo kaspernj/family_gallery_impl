@@ -4,8 +4,11 @@ source "https://rubygems.org"
 gem "rails", "4.2.6"
 
 gem "family_gallery", github: "kaspernj/family_gallery"
+gem "bootstrap_builders", github: "kaspernj/bootstrap_builders"
+
 # gem "family_gallery", path: "/Users/kaspernj/Dev/Rails/family_gallery"
-gem "bootstrap_builders", path: "/Users/kaspernj/Dev/Ruby/bootstrap_builders"
+# gem "bootstrap_builders", path: "/Users/kaspernj/Dev/Ruby/bootstrap_builders"
+
 gem "mysql2", "~> 0.3.19"
 
 group :development do
