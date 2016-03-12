@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/kaspernj/auto_autoloader.git
+  revision: c876c369588a02b944060d7e209e9d672af33cc5
+  specs:
+    auto_autoloader (0.0.4)
+      string-cases
+
+GIT
   remote: git://github.com/kaspernj/awesome_translations.git
   revision: d8786138cfa5449ff43440b131523806cd5b5fdf
   branch: kj/rubocop_rails_best_practices_scss_lint_coffeelint_haml_lint
@@ -105,8 +112,6 @@ GEM
     arel (6.0.3)
     array_enumerator (0.0.10)
     ast (2.2.0)
-    auto_autoloader (0.0.4)
-      string-cases
     baza (0.0.20)
       array_enumerator (~> 0.0.10)
       datet (~> 0.0.25)
@@ -424,6 +429,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  auto_autoloader!
   awesome_translations!
   best_practice_project!
   bootstrap_builders!

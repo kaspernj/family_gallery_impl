@@ -4,6 +4,7 @@ source "https://rubygems.org"
 gem "rails", "4.2.6"
 
 gem "awesome_translations", github: "kaspernj/awesome_translations", branch: "kj/rubocop_rails_best_practices_scss_lint_coffeelint_haml_lint"
+gem "auto_autoloader", github: "kaspernj/auto_autoloader"
 gem "string-cases", "0.0.4"
 
 gem "family_gallery", github: "kaspernj/family_gallery"
