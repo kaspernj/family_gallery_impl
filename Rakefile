@@ -5,5 +5,7 @@ require File.expand_path("../config/application", __FILE__)
 
 FamilyGalleryImpl::Application.load_tasks
 
-require "best_practice_project"
-BestPracticeProject.load_tasks
+if Rails.env.development? || Rails.env.test?
+  require "best_practice_project"
+  BestPracticeProject.load_tasks
+end
