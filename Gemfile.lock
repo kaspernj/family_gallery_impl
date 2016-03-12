@@ -1,6 +1,7 @@
 GIT
   remote: git://github.com/kaspernj/awesome_translations.git
-  revision: 73207251bcc3ee049f90199617538383300d959e
+  revision: d8786138cfa5449ff43440b131523806cd5b5fdf
+  branch: kj/rubocop_rails_best_practices_scss_lint_coffeelint_haml_lint
   specs:
     awesome_translations (0.0.25)
       active-record-transactioner
@@ -8,14 +9,14 @@ GIT
       auto_autoloader
       baza (>= 0.0.20)
       baza_migrations (>= 0.0.1)
-      baza_models (>= 0.0.2)
+      baza_models (>= 0.0.3)
       coffee-rails
       haml-rails
       jquery-rails
       rails (>= 3.0.0, < 5.0.0)
       sass-rails
       sqlite3
-      string-cases (= 0.0.2)
+      string-cases (>= 0.0.3)
 
 GIT
   remote: git://github.com/kaspernj/best_practice_project.git
@@ -116,10 +117,11 @@ GEM
       auto_autoloader
       baza (~> 0.0.20)
       string-cases (~> 0.0.1)
-    baza_models (0.0.2)
-      array_enumerator
+    baza_models (0.0.3)
+      array_enumerator (>= 0.0.10)
+      auto_autoloader (>= 0.0.1)
       baza (~> 0.0.20)
-      string-cases (>= 0.0.2)
+      string-cases (>= 0.0.3)
     bcrypt (3.1.11)
     builder (3.2.2)
     cancancan (1.13.1)
@@ -399,7 +401,7 @@ GEM
       colorize
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-    string-cases (0.0.2)
+    string-cases (0.0.4)
     string-strtr (0.0.3)
     thor (0.19.1)
     thread_safe (0.3.5)
