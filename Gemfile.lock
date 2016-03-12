@@ -14,10 +14,10 @@ GIT
 
 GIT
   remote: git://github.com/kaspernj/family_gallery.git
-  revision: 471255098d2efb2c1e0066600653073d5135d00c
+  revision: 567b733f6983d7919519c62f74f1760c7ec410dd
   specs:
     family_gallery (0.0.8)
-      awesome_translations (~> 0.0.24)
+      awesome_translations (~> 0.0.25)
       bootstrap_builders
       cancancan
       coffee-rails (~> 4.1.1)
