@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "rails", "4.2.6"
+gem "puma", "3.4.0"
 
 gem "awesome_translations", github: "kaspernj/awesome_translations", branch: "kj/rubocop_rails_best_practices_scss_lint_coffeelint_haml_lint"
 gem "auto_autoloader", github: "kaspernj/auto_autoloader"
@@ -20,7 +21,7 @@ group :development do
   gem "capistrano", "3.4.0"
   gem "capistrano-rails", "1.1.6"
   gem "capistrano-bundler", "1.1.4"
-  gem "capistrano-passenger", "0.2.0"
+  gem "capistrano3-puma", "1.2.1"
 
   gem "spring", "1.6.4"
   gem "spring-commands-rspec", "1.0.4"

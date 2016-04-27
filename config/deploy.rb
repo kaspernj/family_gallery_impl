@@ -37,13 +37,18 @@ set :keep_releases, 5
 # RVM
 set :rvm_ruby_version, "2.2.0"
 
+set :puma_threads, [0, 8]
+set :puma_workers, 4
+set :puma_worker_timeout, 30
+set :puma_init_active_record, true
+set :puma_preload_app, true
+set :puma_bind, ["tcp://0.0.0.0:3000"]
+
 namespace :deploy do
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
+      invoke "puma:stop"
+      invoke "puma:config"
     end
   end
 
