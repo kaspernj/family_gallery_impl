@@ -34,11 +34,8 @@ set :linked_dirs, fetch(:linked_dirs, []).push("bin", "log", "tmp/pids", "tmp/ca
 # Default value for keep_releases is 5
 set :keep_releases, 5
 
-# RVM
-set :rvm_ruby_version, "2.2.0"
-
-set :puma_threads, [0, 8]
-set :puma_workers, 4
+set :puma_threads, [0, 4]
+set :puma_workers, 8
 set :puma_worker_timeout, 30
 set :puma_init_active_record, true
 set :puma_preload_app, true
