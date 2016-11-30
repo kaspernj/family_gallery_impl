@@ -22,6 +22,8 @@ group :development do
   gem "capistrano-rails", "1.1.6"
   gem "capistrano-bundler", "1.1.4"
   gem "capistrano3-puma", "1.2.1"
+  gem "capistrano-rake", "0.1.0", require: false
+  gem "capistrano-rails-console", "1.0.2", require: false
 
   gem "spring", "1.6.4"
   gem "spring-commands-rspec", "1.0.4"

@@ -140,6 +140,10 @@ GEM
     capistrano-rails (1.1.6)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    capistrano-rails-console (1.0.2)
+      capistrano (>= 3.1.0, < 4.0.0)
+    capistrano-rake (0.1.0)
+      capistrano (>= 3.0)
     capistrano3-puma (1.2.1)
       capistrano (~> 3.0)
       puma (>= 2.6)
@@ -438,6 +442,8 @@ DEPENDENCIES
   capistrano (= 3.4.0)
   capistrano-bundler (= 1.1.4)
   capistrano-rails (= 1.1.6)
+  capistrano-rails-console (= 1.0.2)
+  capistrano-rake (= 0.1.0)
   capistrano3-puma (= 1.2.1)
   coffeelint (= 1.14.0)
   colorize (= 0.6.0)
@@ -456,4 +462,4 @@ DEPENDENCIES
   string-cases (= 0.0.4)
 
 BUNDLED WITH
-   1.11.2
+   1.13.6
